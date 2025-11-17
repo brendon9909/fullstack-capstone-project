@@ -23,6 +23,7 @@ app.use(express.json());
 
 // Route files
 // Gift API Task 1: import the giftRoutes and store in a constant called giftroutes
+const giftroutes = require('./routes/giftRoutes')
 //{{insert code here}}
 
 // Search API Task 1: import the searchRoutes and store in a constant called searchRoutes
@@ -36,6 +37,7 @@ app.use(pinoHttp({ logger }));
 
 // Use Routes
 // Gift API Task 2: add the giftRoutes to the server by using the app.use() method.
+app.use('/api/gifts', giftroutes)
 //{{insert code here}}
 
 // Search API Task 2: add the searchRoutes to the server by using the app.use() method.
