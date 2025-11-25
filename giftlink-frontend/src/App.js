@@ -1,5 +1,4 @@
 /*jshint esversion: 8 */
-import React from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import MainPage from "./components/MainPage/MainPage";
 import LoginPage from "./components/LoginPage/LoginPage";
@@ -9,6 +8,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import SearchPage from "./components/SearchPage/SearchPage";
 function App() {
+  // eslint-disable-next-line no-unused-vars
   const navigate = useNavigate();
   return (
     <>
